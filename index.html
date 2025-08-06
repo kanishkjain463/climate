@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Climate Change: A Global Crisis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { 
+      margin: 0; font-family: 'Segoe UI',Arial,sans-serif; background: #f0f4fa; color: #222;
+    }
+    .slide {
+      display: none; 
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+      min-height: 90vh;
+      transition: opacity 1s;
+      padding: 32px 16px;
+    }
+    .active {
+      display: flex;
+      animation: fadein 1s;
+      opacity: 1;
+    }
+    @keyframes fadein { from {opacity:0;} to {opacity:1;} }
+    h1, h2 { color: #2C3E50;}
+    .nav-btns {
+      text-align: center; margin-top: 24px;
+    }
+    button {
+      background: #2980b9; color: #fff; border: none; border-radius: 6px;
+      padding: 12px 28px; margin: 0 6px; font-size: 16px; cursor: pointer;
+      transition: background .2s;
+    }
+    button:hover { background: #3498db; }
+    .animated-chart, .animated-map { margin: 20px 0; }
+    .circle {
+      width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(45deg,#fdcb6e 70%,#d63031 100%);
+      display:inline-block; line-height:120px; font-size: 28px; color:#fff; text-align: center;
+      margin:8px;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% {box-shadow: 0 0 0 0 #d6303177;}
+      70% {box-shadow: 0 0 30px 10px #fdcb6e55;}
+      100% {box-shadow: 0 0 0 0 #d6303177;}
+    }
+    .small { font-size: 15px; }
+    .bar { height:30px; background:#00b894; margin-bottom:8px; border-radius:6px;}
+    .bar-label {margin-left:12px;}
+    .impact-img { width: 60px; margin: 0 8px;}
+    .solution-img { width: 80px; margin: 0 10px;}
+    @media (max-width:700px) {
+      h1 { font-size: 25px; }
+      .solution-img {width: 48px;}
+    }
+  </style>
+</head>
+<body>
+  <div id="slides">
+
+  <!-- Slide 1: Title -->
+  <section class="slide active">
+    <h1>Climate Change: A Global Crisis</h1>
+    <h3>Understanding Causes, Real-World Impacts, and Solutions for Our Planet</h3>
+    <div class="circle" style="background: conic-gradient(#6dcffe 0 70%, #ff5e57 70%);">2024</div>
+    <div class="small">Animated globe: 🌍 <span style="color:red">Warming by 1.55°C</span></div>
+  </section>
+
+  <!-- Slide 2: What is Climate Change -->
+  <section class="slide">
+    <h2>What is Climate Change?</h2>
+    <p>Long-term shifts in global temperatures & weather.<br>
+    <strong>2024: Hottest year on record, warming by 1.55°C above pre-industrial.</strong><br>
+    Human-caused with 95% certainty, current rate: 0.25°C per decade.</p>
+    <div class="animated-map"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Global_Temperature_Anomaly_1880%E2%80%932021.png" alt="Warming Map" width="320"></div>
+  </section>
+
+  <!-- Slide 3: Primary Causes -->
+  <section class="slide">
+    <h2>Primary Causes of Climate Change</h2>
+    <span class="bar" style="width:80%;">Electricity 30%</span>
+    <span class="bar" style="width:65%;">Transport 26%</span>
+    <span class="bar" style="width:40%;">Industry 21%</span>
+    <span class="bar" style="width:25%;">Agriculture/Land 12%</span>
+    <div class="small">Animated pie: Major sources visualize as animated bars.</div>
+  </section>
+
+  <!-- Slide 4: Greenhouse Gas Concentrations -->
+  <section class="slide">
+    <h2>Atmospheric Greenhouse Gases</h2>
+    <p>CO₂ now <b>51% higher than pre-industrial</b>.<br><span class="circle">51%</span>
+    Methane: More potent, shorter-lived.<br>
+    Emissions: 56 billion tons/year.</p>
+    <div class="small">Layered atmosphere animation: Gases trapping heat.</div>
+  </section>
+
+  <!-- Slide 5: Extreme Weather -->
+  <section class="slide">
+    <h2>Extreme Weather Impacts</h2>
+    <div>
+      <img class="impact-img" src="https://img.icons8.com/clouds/100/000000/storm.png">
+      <img class="impact-img" src="https://img.icons8.com/ultraviolet/80/000000/fire-element.png">
+      <img class="impact-img" src="https://img.icons8.com/color/96/000000/floods.png">
+      <img class="impact-img" src="https://img.icons8.com/color/96/000000/forest.png">
+    </div>
+    <p><b>2024:</b> 41 days extra dangerous heat<br>Major hurricanes, wildfires, floods, storms increasing.</p>
+  </section>
+
+  <!-- Slide 6: Sea Level Rise -->
+  <section class="slide">
+    <h2>Rising Sea Levels</h2>
+    <p>+8-9 inches since 1880, rising fast.<br>
+      <span class="circle">2050:<br>+6 inches</span> (worldwide)<br>
+      66% due to melting ice, 33% from ocean warming.</p>
+    <div class="small">Animated flood: Coastal flooding over time.</div>
+  </section>
+
+  <!-- Slide 7: Health Impacts -->
+  <section class="slide">
+    <h2>Health Threats</h2>
+    <p>250,000+ extra deaths/year by 2050 (heat, malnutrition, disease).<br>
+      <small>Air pollution: 7 million deaths/yr. 58% of infectious diseases aggravated.</small></p>
+    <div class="small">Air quality animation: Particle density increases.</div>
+  </section>
+
+  <!-- Slide 8: Agriculture & Food -->
+  <section class="slide">
+    <h2>Food Security at Risk</h2>
+    <ul>
+      <li>Up to 183 million more at risk of hunger.</li>
+      <li>Cereal prices up 1-29% by 2050.</li>
+      <li>Wheat: 6-12% lower protein quality.</li>
+    </ul>
+    <div class="small">Crop yield declines & food price spikes visualized.</div>
+  </section>
+
+  <!-- Slide 9: Economic Consequences -->
+  <section class="slide">
+    <h2>Economic Impact</h2>
+    <p>Every +1°C = 12% GDP drop.<br>
+    By 2050: 19% global income drop.<br>
+    US 2024 storms alone: $60 billion damages.</p>
+    <div class="small">Declining GDP chart, infrastructure destruction illustrations.</div>
+  </section>
+
+  <!-- Slide 10: Solutions -->
+  <section class="slide">
+    <h2>Building a Sustainable Future</h2>
+    <div>
+      <img class="solution-img" src="https://img.icons8.com/color/96/000000/wind-turbine.png" alt="Wind">
+      <img class="solution-img" src="https://img.icons8.com/color/96/000000/solar-panel.png" alt="Solar">
+      <img class="solution-img" src="https://img.icons8.com/color/96/000000/electric-car.png" alt="Electric">
+      <img class="solution-img" src="https://img.icons8.com/color/96/000000/forest.png" alt="Forest">
+      <img class="solution-img" src="https://img.icons8.com/color/96/000000/vegan-symbol.png" alt="Veg">
+    </div>
+    <ul>
+      <li>Transition to 100% renewables, electrify transport/heating.</li>
+      <li>Protect forests, reforest, price carbon, sustainable diets.</li>
+      <li><b>Act now – solutions are available and affordable!</b></li>
+    </ul>
+  </section>
+
+  </div>
+  <div class="nav-btns">
+    <button onclick="prevSlide()">⬅ Prev</button>
+    <button onclick="nextSlide()">Next ➡</button>
+  </div>
+  <script>
+    let cur = 0;
+    let slides = document.querySelectorAll('.slide');
+    function goToSlide(i) {
+      slides[cur].classList.remove('active');
+      cur = i;
+      slides[cur].classList.add('active');
+    }
+    function nextSlide() {
+      if(cur < slides.length-1) goToSlide(cur+1);
+    }
+    function prevSlide() {
+      if(cur > 0) goToSlide(cur-1);
+    }
+    // Optional: Arrow key support
+    document.body.addEventListener('keydown', function(e){
+      if(e.key === 'ArrowRight') nextSlide();
+      else if(e.key === 'ArrowLeft') prevSlide();
+    });
+  </script>
+</body>
+</html>
